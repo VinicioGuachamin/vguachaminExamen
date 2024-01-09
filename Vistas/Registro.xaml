@@ -73,7 +73,7 @@
             </Picker>
 
 
-            <Label Text="Monto:"
+            <Label Text="Monto Inicial:"
                     FontSize="18"
                     Grid.Row="3"
                     Grid.Column="0"
@@ -87,14 +87,15 @@
 
             <Label Text="Pago Mensual:"
                     FontSize="18"
-                    Grid.Row="3"
+                    Grid.Row="4"
                     Grid.Column="0"
             />
             <Entry x:Name="txtMensual"
                    Placeholder="Pago Mensual"
                    Keyboard="Numeric"
-                   Grid.Row="3"
+                   Grid.Row="4"
                    Grid.Column="1"
+                   IsReadOnly="true"
             />
             
         </Grid>
@@ -120,7 +121,7 @@
                    Grid.Column="0"
             />
 
-            <Label Text="Nombre:"
+            <Label Text="Apellido:"
                     FontSize="18"
                     Grid.Row="0"
                     Grid.Column="1"

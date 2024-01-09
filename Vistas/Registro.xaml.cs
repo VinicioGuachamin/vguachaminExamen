@@ -18,12 +18,12 @@ public partial class Registro : ContentPage
 
     private void btnResumen_Clicked(object sender, EventArgs e)
     {
-        string resumen = txtNombre.Text + "\n"
-            + txtApellido.Text + "\n"
-            + txtEdad.Text + "\n"
-            + fecha.Date + "\n"
-            + txtMontoInicial.Text + "\n"
-            + txtMensual.Text + "\n";
+        string resumen = "Nombre: " + txtNombre.Text + "\n" +
+            "Apellido: " + txtApellido.Text + "\n"
+            + "Edad: " + txtEdad.Text + "\n"
+            + "Fecha: " + fecha.Date + "\n"
+            + "Monto Inicial: " + txtMontoInicial.Text + "\n"
+            + "Pago Mensual: " + txtMensual.Text + "\n";
         DisplayAlert("Alert", resumen, "OK");
     }
 }

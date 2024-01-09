@@ -30,6 +30,9 @@ public partial class Login : ContentPage
         if (login.Count > 0)
         {
             Navigation.PushAsync(new Vistas.Registro());
+        }else
+        {
+            DisplayAlert("Alert", "Usuario/Contraseña Incorrecta", "OK");
         }
     }
 

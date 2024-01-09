@@ -16,6 +16,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -23,10 +24,6 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <!--<Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>-->
 
             <Label Text="USUARIO:"
                    FontSize="18"
@@ -51,17 +48,21 @@
                    Grid.Row="1"
                    Grid.Column="1"
             />
-  
-        </Grid>
-
             <Button x:Name="btnLogin"
                     Text="Iniciar sesion"
                     Clicked="btnLogin_Clicked" 
+                    Grid.Row="2"
+                    Grid.Column="0"
             />
             <Button x:Name="btnAcerca"
                     Text="Acerca"
                     Clicked="btnAcerca_Clicked"
+                    Grid.Row="2"
+                    Grid.Column="1"
             />
+        </Grid>
+
+            
 
     </VerticalStackLayout>
 </ContentPage>

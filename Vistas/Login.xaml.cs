@@ -29,7 +29,7 @@ public partial class Login : ContentPage
         var login = us.Where(x => x.name == usuario && x.pass == pass).ToList();
         if (login.Count > 0)
         {
-            Navigation.PushAsync(new Vistas.Registro());
+            Navigation.PushAsync(new Vistas.Registro(login.FirstOrDefault().name));
         }else
         {
             DisplayAlert("Alert", "Usuario/Contraseña Incorrecta", "OK");
@@ -38,7 +38,7 @@ public partial class Login : ContentPage
 
     private void btnAcerca_Clicked(object sender, EventArgs e)
     {
-
+        DisplayAlert("Alert", "Proyecto construido por Vinicio Guachamin", "OK");
     }
 
 	public class Usuarios
